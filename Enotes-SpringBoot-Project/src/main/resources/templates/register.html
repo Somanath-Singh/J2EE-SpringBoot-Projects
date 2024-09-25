@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org"
+	th:replace="~{ base :: layout(~{ :: title} , ~{ :: section} ) }">
+<head>
+<meta charset="ISO-8859-1">
+<title>Register : Page</title>
+</head>
+<body>
+
+	<section>
+
+		<div class="container mt-2">
+
+			<div class="row justify-content-center">
+
+				<div class="col-md-6">
+
+					<div class="card">
+
+						<div class="card-header text-center">
+							<h2 class=" text-primary">Signup Here ! !</h2>
+
+							<div class="container text-center">
+								<img style="width: 80px;" src="" th:src="@{/img/blogging.png}"
+									alt="" />
+							</div>
+
+						</div>
+
+						<div class="card-body register-background">
+
+							<!-- Message shown in webpage  -->
+							<th:block th:if="${session.msg}">
+
+								<div class="alert text-center " role="alert"
+									th:classappend="${session.type}">[[${session.msg}]]</div>
+
+								<th:block th:text="${@userServiceImpl.removeSessionMessage()}"></th:block>
+
+							</th:block>
+
+							<form th:action="@{/addUser}" method="POST" th:object="${User}">
+
+								<div class="mb-3">
+									<label for="exampleInputName" class="form-label">Enter
+										Full Name</label> <input type="text" th:field="*{name}"
+										class="form-control" name="name" id="exampleInputName"
+										th:classappend="${#fields.hasErrors('name')} ? is-invalid : ' ' "
+										placeholder="Enter your email name !"
+										aria-describedby="validationServerName">
+
+									<div id="validationServerName" class="invalid-feedback"
+										th:if="${#fields.hasErrors('name')}" th:errors="*{name}">
+										Name Error</div>
+
+								</div>
+
+								<div class="mb-3">
+									<label for="exampleInputQualification" class="form-label">Enter
+										Qualification</label> <input type="text" th:field="*{qualification}"
+										class="form-control" name="qualification"
+										id="exampleInputQualification"
+										th:classappend="${#fields.hasErrors('qualification')} ? is-invalid : ' ' "
+										placeholder="Enter your email qualification !"
+										aria-describedby="validationServerQualificaion">
+
+									<div id="validationServerQualificaion" class="invalid-feedback"
+										th:if="${#fields.hasErrors('qualification')}"
+										th:errors="*{qualification}">Qualification Error</div>
+
+								</div>
+
+								<div class="mb-3">
+									<label for="exampleInputEmail" class="form-label">Email
+										address</label> <input name="email" th:field="*{email}" type="email"
+										class="form-control" id="exampleInputEmail"
+										th:classappend="${#fields.hasErrors('email')} ? is-invalid : ' ' "
+										placeholder="Enter your email address !"
+										aria-describedby="validationServerEmail">
+									<div id="validationServerEmail" class="form-text">We'll
+										never share your email with anyone else.</div>
+
+									<div id="validationServerEmail" class="invalid-feedback"
+										th:if="${#fields.hasErrors('email')}" th:errors="*{email}">
+										Email Error</div>
+
+								</div>
+
+								<div class="mb-3">
+									<label for="exampleInputPassword" class="form-label">Enter
+										Password</label> <input type="password" class="form-control"
+										name="password" th:field="*{password}"
+										th:classappend="${#fields.hasErrors('password')} ? is-invalid : ' ' "
+										placeholder="Enter your password  !" id="exampleInputPassword"
+										aria-describedby="validationServerPassword">
+
+									<div id="validationServerPassword" class="invalid-feedback"
+										th:if="${#fields.hasErrors('password')}"
+										th:errors="*{password}">Password Error</div>
+								</div>
+
+								<div class="mb-3">
+
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="radio" name="gender"
+											id="inlineRadio1" value="male" required> <label
+											class="form-check-label" for="inlineRadio1">Male</label>
+									</div>
+
+									<div class="form-check form-check-inline">
+										<input class="form-check-input" type="radio" name="gender"
+											id="inlineRadio2" value="female" required> <label
+											class="form-check-label" for="inlineRadio2">Female</label>
+
+									</div>
+
+
+
+								</div>
+
+								<div class="mb-3">
+									<label for="exampleInputAddress" class="form-label">Enter
+										Address</label> <input type="text" th:field="*{address}"
+										class="form-control" name="address"
+										placeholder="Enter your address  ! !" id="exampleInputAddress"
+										th:classappend="${#fields.hasErrors('address')} ? is-invalid : ' ' "
+										aria-describedby="validationServerAddress">
+
+									<div id="validationServerAddress" class="invalid-feedback"
+										th:if="${#fields.hasErrors('address')}" th:errors="*{address}">Address
+										Error</div>
+
+								</div>
+
+								<div class="mb-3 text-center">
+									<button type="submit" class="btn btn-primary">Login</button>
+								</div>
+
+							</form>
+
+						</div>
+
+
+					</div>
+
+				</div>
+
+			</div>
+
+		</div>
+
+	</section>
+
+</body>
+</html>

@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+
+<link
+	href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+	rel="stylesheet"
+	integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+	crossorigin="anonymous">
+	
+</head>
+<body>
+
+	<section>
+
+		<div class="container mt-2">
+
+			<div class="row justify-content-center">
+
+				<div class="col-md-6">
+
+					<div class="card">
+
+						<div class="card-header text-center">
+						
+							<h2 class=" text-primary">Signup Here ! !</h2>
+
+						</div>
+
+						<div class="card-body register-background">
+
+							<!-- Message shown in webpage  -->
+							<th:block th:if="${session.msg}">
+							
+									<div class="alert text-center" role="alert" th:classappend="${session.type}">
+										[[${session.msg}]]
+									</div>
+									
+									<!-- remove condition after refresh it remove-->
+									<th:block th:text="${@employeeServiceImpl.removeSessionMessage()}"></th:block>
+							
+							</th:block>
+
+							<form th:action="@{/addEmployee}" method="POST">
+
+								<div class="mb-3">
+									<label for="exampleInputName" class="form-label">Enter
+										Full Name</label> <input type="text"
+										class="form-control" name="name" id="exampleInputName"
+										placeholder="Enter your email name !"
+										aria-describedby="validationServerName">
+
+								</div>
+
+								<div class="mb-3">
+									<label for="exampleInputQualification" class="form-label">Enter
+										Department</label> <input type="text"
+										class="form-control" name="department"
+										id="exampleInputQualification"
+										placeholder="Enter your email department !"
+										aria-describedby="validationServerQualificaion">
+
+
+								</div>
+
+								<div class="mb-3">
+									<label for="exampleInputEmail" class="form-label">Email
+										id </label> <input name="email"  type="email"
+										class="form-control" id="exampleInputEmail"
+										placeholder="Enter your email address !"
+										aria-describedby="validationServerEmail">
+									<div id="validationServerEmail" class="form-text">We'll
+										never share your email with anyone else.</div>
+
+
+								</div>
+
+								<div class="mb-3">
+									<label for="exampleInputPassword" class="form-label">Enter
+										Password</label> <input type="password" class="form-control"
+										name="password" 
+										placeholder="Enter your password  !" id="exampleInputPassword"
+										aria-describedby="validationServerPassword">
+
+								</div>
+
+
+								<div class="mb-3 text-center">
+									<button type="submit" class="btn btn-primary">Login</button>
+								</div>
+
+							</form>
+
+						</div>
+
+
+
+					</div>
+
+
+				</div>
+
+			</div>
+
+		</div>
+
+		</div>
+
+	</section>
+
+<script
+		src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+		
+</body>
+</html>

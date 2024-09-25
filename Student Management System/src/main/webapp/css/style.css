@@ -1,0 +1,415 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.section{
+    background-image: linear-gradient(to left, rgba(0, 0, 39, 0.685),rgba(26, 26, 87, 0.629)) , url("../media/igit2.jpg") ;
+    height: 90vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.navlinks ul li:hover {
+    background-color: springgreen;
+}
+
+.navlinks ul li:active {
+    background-color: red;
+    color: white;
+}
+.nav{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 36px;
+}
+.nav div h1{
+    color: aliceblue;
+}
+.nav div ul li{
+    display: inline;
+    padding: 8px;
+    list-style-type: none;
+}
+.nav div ul li a{
+    text-decoration: none;
+    margin: 6px;
+    color: antiquewhite;
+    font-size: 18px;
+}
+hr{
+    width: 80%;
+    margin: auto;
+    margin-top: 44px;  
+}
+.section p{
+    text-align: center;
+    color: azure;
+    font-size: 36px;
+    font-weight: 600;
+    padding: 28px;
+}
+.description{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    margin-top: 44px;
+}
+.description div h3{
+    text-align: center;
+    color: gold;
+    text-decoration: underline;
+}
+.description h4{
+	font-size:20px;
+}
+.description div p{
+    font-size: 17px;
+}
+.description div{
+    flex-basis: 33%;
+}
+.section h4{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    color: gold;
+    padding-top: 12px;
+    letter-spacing: 2px;
+}
+
+.body{
+    display: flex;
+    width: 80%;
+    margin: auto;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 44px;
+    margin-bottom: 44px;
+}
+.body div{
+    flex-basis: 45%;
+    text-align: center;
+}
+.body div img{
+    width: 105px;
+    padding: 6px;
+}
+.body div h2{
+    text-decoration: underline;
+    color: chocolate;
+    padding: 12px;
+}
+.body div p{
+    padding: 16px;
+    line-height: 20px;
+    letter-spacing: 2px;
+}
+
+.copyrights{
+    width:100%;
+    height: 44px;
+    text-align: center;
+    background-color: black;
+    color: aliceblue;
+    padding-top: 12px;
+}
+
+
+.result-body{
+        background-image: linear-gradient(to left, rgba(0, 0, 39, 0.685), rgba(26, 26, 87, 0.629)), url("../media/igit2.jpg");
+        height: 50vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 4%;
+}
+body h2{
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 60px;
+    border-bottom: 2px dashed rgb(255, 255, 255);
+}
+.resultsearch,.admin-body{
+    width: 330px;
+    margin: auto;
+    margin-top: 150px;
+    text-align: center;
+    padding: 16px;
+}
+.resultsearch fieldset{
+    color: aliceblue;
+    font-size: 34px;
+    border: 2px solid white;
+    border-radius: 40px;
+}
+.resultsearch fieldset img{
+    width: 170px;
+    padding: 12px;
+    filter: contrast(90%);
+    border-radius: 24px;
+}
+.resultsearch fieldset form input,.admin-body fieldset form input{
+    border: none;
+    outline: none;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    width: 90%;
+    box-sizing: border-box;
+    padding: 8px;
+    color: rgb(255, 255, 255);
+    margin: 8px;
+    font-size: 16px;
+    background: transparent;
+} 
+.resultsearch fieldset form label {
+    text-align: left !important;
+    color: aliceblue;
+    font-size: 24px;
+    margin: 14px;
+}
+.resultsearch fieldset form button,.admin-body fieldset form button{
+    border-radius: 8px;
+        font-size: 18px;
+        font-weight: 600;
+        outline: none;
+        color: rgb(255, 255, 255);
+        border: 2px solid rgb(255, 255, 255);
+        background: transparent;
+        padding: 10px;
+        margin: 18px;
+    width: 90%;
+}
+.resultsearch fieldset form button:hover,.admin-body fieldset form button:hover{
+    background: wheat;
+    color: rgb(0, 0, 0);
+    transition: 0.2s;
+}
+.resultsearch fieldset a,.admin-body fieldset a{
+        border-radius: 8px;
+        font-size: 20px;
+        font-weight: 600;
+        color: rgb(255, 255, 255);
+        padding: 10px;
+        text-decoration: none;
+        margin: 12px;
+}
+
+
+.admin-body{
+        background-image: linear-gradient(to left, rgba(0, 0, 39, 0.685), rgba(26, 26, 87, 0.629)), url("../media/igit2.jpg");
+        height: 55vh;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        border-radius: 4%;
+}
+.admin-body fieldset form label{
+    text-align: left!important;
+    color: aliceblue;
+    font-size: 24px;
+    margin: 14px;
+}
+.admin-body fieldset legend img{
+    width: 68px;
+    border-radius: 50px;
+}
+.admin-body fieldset h3{
+    color: gold;
+    font-size: 26px;
+    margin: 16px;
+}
+
+
+
+.container{
+    background-image: linear-gradient(to left, rgba(0, 0, 39, 0.685), rgba(26, 26, 87, 0.629)), url("../media/igit2.jpg");
+    height: 110vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.profileheader{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.profileheader div img{
+    width: 108px;
+    border-radius: 50%;
+}
+.profileheader div h1{
+    border-bottom: 2px dashed white;
+    color: aliceblue;
+}
+.container div ul li{
+    display: inline;
+    margin: 12px;
+    padding: 16px;
+}
+.container .navlinks{
+    margin-top: 12px;
+    width: 90%;
+    margin: auto;
+    background-color: transparent;
+    padding: 12px; 
+    border: 2px solid white;  
+}
+.container div ul li a{
+    color: gold;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+
+.stud-info{
+    width: 90%;
+    padding: 12px;
+    margin: auto;
+    border: 2px solid white;
+    height: 70vh;
+}
+
+.sub-info{
+    width: 70%;
+    margin: auto;
+    height: 70vh;
+    background-image: linear-gradient(to right, rgba(0, 0, 255, 0.663),rgba(42, 213, 42, 0.619));
+    border-radius: 8px;
+}
+.sub-info div h3{
+    color: rgb(255, 255, 255);
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid rgb(255, 255, 255);
+    margin-bottom: 8px;
+}
+
+.stud-form,.sub-info div,.sem-change{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+    color: aliceblue;
+}
+.stud-form form #course,.stud-form form #branch,.stud-form form #roll,.stud-form form #name,.stud-form form #fname,.stud-form form #semister,.stud-form form #sub1,.stud-form form #sub2,.stud-form form #sub3,.stud-form form #sub4,.stud-form form #sub5,.sub-info div #semister{
+    width: 50%;
+    box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 18px;
+    color: gold;
+    background: transparent;
+}
+.sem-change #semister{
+	width: 30%;
+    box-sizing: border-box;
+    height: 32px;
+    outline: none;
+    border: 2px solid rgb(255, 255, 255);
+    font-size: 18px;
+    color: gold;
+    background: transparent;
+}
+.stud-form form label,.sub-info div label , .sem-change label{
+    font-size: 20px;
+}
+.stud-form form div{
+    padding: 16px;
+}
+.stud-details form div ,.sub-info div label{
+    padding: 8px;
+}
+
+
+.register-stud {
+    width: 85%;
+    overflow-y: scroll;
+}
+.register-stud div table{
+    width:95%;
+    border: 2px solid white;
+    margin: auto;
+    margin-top: 5px;
+    color: aliceblue;
+    table-layout: unset;
+    text-align: center;
+}
+.register-stud div table th,
+.register-stud div table td {
+    padding: 8px;
+}
+
+
+
+.result{
+
+    width: 90%;
+    margin-top: 26px;
+    margin:auto;
+    margin-top:12px;
+}
+
+.result table{
+
+    width: 100%;
+    margin: auto;
+    color: gold;
+    table-layout: fixed;
+    text-align: center;
+    background-color: rgba(18, 19, 20, 0.727);
+    border: 2px solid white;
+
+}
+.result table td{
+    padding: 8px;
+    font-size: 18px;
+    font-weight: 400;
+}
+.result table th{
+    padding: 6px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.mark{
+    width: 90%;
+    margin: auto;
+    background-image: linear-gradient(to right, rgba(0, 0, 255, 0.663), rgba(42, 213, 42, 0.619));
+    color: aliceblue;
+
+}
+.result table tfoot{
+    background-color: rgba(255, 255, 255, 0.727);
+    border: 2px solid rgb(0, 0, 0);
+    color: rgb(0, 0, 0);
+    font-weight: 600;
+}
+
+
+
+.btn{
+	border: none;
+    background-color: transparent;
+    text-decoration:none;
+    border: 2px solid gold;
+    padding: 6px;
+    font-size: 20px;
+    border-radius: 12px;
+    color: rgb(255, 255, 255);
+    font-weight: 600;
+    cursor: pointer;
+    margin-left:68px;
+    
+}
+.btn:hover{
+	background-color: gold;
+    color: rgb(0, 0, 0);
+    transition: 0.2s;
+}
+
+

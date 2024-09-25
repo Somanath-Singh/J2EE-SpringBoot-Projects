@@ -1,0 +1,179 @@
+/*Utility classes*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+.primary-background {
+    background: rgba(9, 10, 66, 0.906) !important;
+}
+.navbar-back{
+	background: rgba(9, 10, 66, 0.906) !important;
+}
+
+.content-padding {
+    padding: 46px 0;
+}
+
+.banner-background {
+    clip-path: polygon(50% 0%, 100% 0, 100% 93%, 68% 100%, 36% 95%, 0 100%, 0 0);
+}
+
+/*show-blog-page.css */
+
+.post-title {
+    font-weight: 100;
+}
+
+.clip-path {
+    clip-path: polygon(64% 36%, 100% 13%, 100% 100%, 0 100%, 0 42%, 35% 15%);
+}
+
+.main-content {
+    box-shadow: 1px 1px 15px black;
+}
+
+.post-title {
+    font-weight: 100;
+    font-size: 30px;
+}
+
+.post-content {
+    font-weight: 100;
+    font-size: 25px;
+}
+
+.post-date {
+    font-style: italic;
+    font-weight: bold;
+}
+
+.row-user {
+    border: 1px solod #e2e2e2;
+    padding-top: 15px;
+}
+
+.form-div {
+    width: 320px;
+    margin: auto;
+    text-align: left;
+    color: white;
+    position: relative;
+}
+
+.lengend-f {
+    text-align: center;
+    color: blue;
+}
+
+.fieldset-f {
+    padding: 5px 36px;
+    border: 1px solid blue;
+}
+
+#frm {
+    width: 100%;
+}
+
+#frm label {
+    color: blue;
+}
+
+.footer {
+    width: 100%;
+    text-align: center;
+    padding: 30px 0;
+}
+
+.footer h4 {
+    margin-bottom: 25px;
+    margin-top: 20px;
+    font-weight: 600;
+}
+
+.icons .fa {
+    color: #f44336;
+    margin: 0 13px;
+    cursor: pointer;
+    padding: 18px 0;
+}
+
+.fa-heart {
+    color: #1fd145;
+}
+
+
+/* cta */
+.cta {
+    width: 80%;
+    margin: 100px auto;
+    text-align: center;
+    background-image: linear-gradient(rgba(2, 12, 206, 0.7), rgba(31, 87, 255, 0.582)), url(./images/ctaback.jpg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    padding: 100px 0;
+}
+
+.cta h1 {
+    color: #fff;
+    margin-bottom: 40px;
+    padding: 0;
+}
+
+@media(max-width:700px) {
+    .cta h1 {
+        font-size: 24px;
+    }
+}
+
+.hero_btn {
+    display: inline-block;
+    text-decoration: none;
+    color: #fff;
+     border: 1px solid #f44336;
+     background: rgb(248, 91, 69)!important;
+    padding: 12px 22px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.hero_btn:hover {
+   
+   background: rgb(255, 255, 255)!important;
+    color: rgb(0, 0, 128);
+    transition: 1s;
+}
+
+.page-background {
+    clip-path: polygon(100% 0%, 100% 99%, 75% 84%, 42% 99%, 0 80%, 0 0);
+}
+
+/* footer */
+.footer-background-con {
+    background-image: url("./images/pattern.png");
+    background-position: center;
+    background-size: 300px;
+
+    width: 100%;
+    background-color: #00f2ffa8;
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 25px;
+    height: 60px;
+    padding: 10px 30px;
+}
+
+.footer-background-copy {
+    text-align: right;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.696);
+    font-family: 'Baloo Bhai 2', cursive;
+    font-size: 15px;
+    height: 60px;
+    padding: 13px 35px;
+    margin-bottom: 10px;
+    color: white;
+}
